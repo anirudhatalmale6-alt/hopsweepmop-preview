@@ -6,164 +6,170 @@
 <title>Hop Sweep Mop Cleaning Services LLC — Dubai</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --green:#2Fb84e;
-  --green-dark:#1f9c3f;
-  --navy:#0f2a3d;
-  --navy-2:#14384f;
-  --ink:#12232e;
-  --muted:#5b6d78;
-  --bg:#f4f8f6;
-  --line:#e3ece7;
-  --white:#ffffff;
-  --shadow:0 18px 40px -18px rgba(15,42,61,.28);
+  --navy:#1B3C5F;
+  --navy-d:#132c46;
+  --green:#B6FFB1;
+  --green-mid:#7ed67a;
+  --green-deep:#3ca34a;
+  --ink:#2b2b2b;
+  --muted:#667380;
+  --line:#e7ecf0;
+  --soft:#f5f8fa;
+  --soft-green:#eefcec;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:var(--ink);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased}
+body{font-family:'Open Sans',-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:#fff;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,h5,.mont{font-family:'Montserrat',sans-serif}
 .wrap{max-width:1180px;margin:0 auto;padding:0 26px}
 a{text-decoration:none;color:inherit}
-.btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:15px;padding:14px 26px;border-radius:40px;cursor:pointer;transition:.2s;border:none}
-.btn-green{background:var(--green);color:#fff;box-shadow:0 10px 22px -8px rgba(47,184,78,.6)}
-.btn-green:hover{background:var(--green-dark);transform:translateY(-2px)}
-.btn-ghost{background:rgba(255,255,255,.12);color:#fff;border:1.5px solid rgba(255,255,255,.35)}
-.btn-ghost:hover{background:rgba(255,255,255,.22)}
-.btn-outline{background:#fff;color:var(--navy);border:1.5px solid var(--line)}
-.btn-outline:hover{border-color:var(--green);color:var(--green-dark)}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:'Montserrat';font-weight:700;font-size:14px;letter-spacing:.3px;padding:13px 26px;border-radius:8px;cursor:pointer;transition:.18s;border:none}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy-d);transform:translateY(-1px)}
+.btn-green{background:var(--green-deep);color:#fff}
+.btn-green:hover{background:#2f8c3d;transform:translateY(-1px)}
+.btn-out{background:#fff;color:var(--navy);border:1.5px solid var(--navy)}
+.btn-out:hover{background:var(--navy);color:#fff}
 
 /* Topbar */
-.topbar{background:var(--navy);color:#cfe0d9;font-size:13.5px}
-.topbar .wrap{display:flex;justify-content:space-between;align-items:center;height:42px}
-.topbar .t-left span{margin-right:22px;opacity:.9}
-.topbar .t-left b{color:#fff;font-weight:600}
-.topbar .t-right span{margin-left:16px}
-.dot{color:var(--green)}
+.topbar{background:var(--navy);color:#dfe8f0;font-size:13.5px}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;height:40px}
+.topbar b{color:#fff;font-weight:600}
+.topbar .soc a{margin-left:14px;color:#cfe0ef;font-size:15px}
+.topbar .soc a:hover{color:var(--green)}
 
-/* Nav */
-header.nav{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:74px}
-.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:20px;color:var(--navy)}
-.brand .mark{width:40px;height:40px;border-radius:11px;background:linear-gradient(135deg,var(--green),#7fd18d);display:flex;align-items:center;justify-content:center;color:#fff;font-size:20px;box-shadow:0 8px 18px -6px rgba(47,184,78,.55)}
-.brand small{display:block;font-size:11px;font-weight:600;color:var(--muted);letter-spacing:.5px;margin-top:-2px}
-nav.menu{display:flex;gap:30px;font-weight:600;font-size:15px;color:var(--navy)}
-nav.menu a{position:relative;color:#26404f}
-nav.menu a:hover{color:var(--green-dark)}
-nav.menu a.active{color:var(--green-dark)}
-.nav-cta{display:flex;align-items:center;gap:14px}
-.phone-pill{font-weight:700;color:var(--navy);font-size:15px}
+/* Header */
+header.site{position:sticky;top:0;z-index:40;background:#fff;border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:84px}
+.logo img{height:52px;display:block}
+nav.menu{display:flex;gap:26px;align-items:center;font-family:'Montserrat';font-weight:600;font-size:13.5px;letter-spacing:.6px;text-transform:uppercase;color:var(--navy)}
+nav.menu a{color:var(--navy);position:relative;padding:4px 0}
+nav.menu a.active{color:var(--green-deep)}
+nav.menu a:hover{color:var(--green-deep)}
+nav.menu a.active:after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:2px;background:var(--green-deep)}
 
 /* Hero */
-.hero{position:relative;background:
-   radial-gradient(1100px 500px at 85% -10%,rgba(47,184,78,.18),transparent 60%),
-   linear-gradient(160deg,#0f2a3d 0%,#14384f 55%,#0d2534 100%);color:#fff;overflow:hidden}
-.hero:before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.06) 1px,transparent 1px);background-size:22px 22px;opacity:.5}
-.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding:66px 26px 74px}
-.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(47,184,78,.16);border:1px solid rgba(47,184,78,.4);color:#bff3c8;font-weight:600;font-size:13.5px;padding:7px 15px;border-radius:30px;margin-bottom:22px}
-.hero h1{font-size:52px;line-height:1.08;font-weight:800;letter-spacing:-1px;margin-bottom:18px}
-.hero h1 em{font-style:normal;color:#63e07c}
-.hero p.lead{font-size:18px;color:#c5d6dd;max-width:520px;margin-bottom:30px}
-.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px}
-.trust-row{display:flex;gap:26px;flex-wrap:wrap}
-.trust-row .ti{display:flex;align-items:center;gap:10px;font-size:14px;color:#d5e4e9}
-.trust-row .ti b{display:block;color:#fff;font-size:20px;font-weight:800;line-height:1}
-.check{color:var(--green);font-weight:800}
+.hero{background:linear-gradient(180deg,#f7fbfa 0%,#ffffff 100%);position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero:before{content:"";position:absolute;top:-120px;right:-120px;width:420px;height:420px;border-radius:50%;background:var(--green);opacity:.35}
+.hero:after{content:"";position:absolute;bottom:-90px;left:-90px;width:260px;height:260px;border-radius:50%;background:var(--green);opacity:.22}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.08fr .92fr;gap:48px;align-items:center;padding:58px 26px 62px}
+.tag{display:inline-flex;align-items:center;gap:8px;background:var(--soft-green);color:var(--green-deep);font-family:'Montserrat';font-weight:700;font-size:12.5px;letter-spacing:.5px;padding:7px 14px;border-radius:30px;margin-bottom:20px;border:1px solid #cdefc9}
+.hero h1{font-size:44px;line-height:1.14;font-weight:800;color:var(--navy);letter-spacing:-.5px;margin-bottom:16px}
+.hero h1 span{color:var(--green-deep)}
+.hero p.lead{font-size:17px;color:#48586a;max-width:520px;margin-bottom:24px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+.hero-cta .btn-green{background:#25D366}
+.hero-cta .btn-green:hover{background:#1eb457}
+.stats{display:flex;gap:30px;flex-wrap:wrap}
+.stats .s b{font-family:'Montserrat';display:block;font-size:26px;font-weight:800;color:var(--navy);line-height:1}
+.stats .s span{font-size:13px;color:var(--muted)}
 
-/* Booking card */
-.book-card{background:#fff;color:var(--ink);border-radius:20px;padding:28px;box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.6)}
-.book-card h3{font-size:20px;font-weight:800;color:var(--navy);margin-bottom:4px}
-.book-card .sub{font-size:13.5px;color:var(--muted);margin-bottom:18px}
-.field{margin-bottom:13px}
-.field label{display:block;font-size:12.5px;font-weight:700;color:var(--navy);margin-bottom:6px;letter-spacing:.2px}
-.field input,.field select{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:11px;font-family:inherit;font-size:14.5px;color:var(--ink);background:#fbfdfc}
-.field.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.book-card .btn-green{width:100%;justify-content:center;margin-top:6px}
-.book-note{text-align:center;font-size:12px;color:var(--muted);margin-top:12px}
+/* booking card */
+.book{background:#fff;border-radius:14px;padding:26px;box-shadow:0 20px 50px -22px rgba(27,60,95,.35);border:1px solid var(--line)}
+.book .bh{display:flex;align-items:center;gap:10px;margin-bottom:4px}
+.book h3{font-size:20px;font-weight:800;color:var(--navy)}
+.book .sub{font-size:13px;color:var(--muted);margin-bottom:16px}
+.field{margin-bottom:12px}
+.field label{display:block;font-family:'Montserrat';font-size:11.5px;font-weight:700;color:var(--navy);text-transform:uppercase;letter-spacing:.5px;margin-bottom:5px}
+.field input,.field select{width:100%;padding:11px 13px;border:1.5px solid var(--line);border-radius:8px;font-family:inherit;font-size:14px;color:var(--ink);background:#fafcfd}
+.field input:focus,.field select:focus{outline:none;border-color:var(--green-mid)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.book .btn-navy{width:100%;justify-content:center;margin-top:5px}
+.book .note{text-align:center;font-size:11.5px;color:var(--muted);margin-top:10px}
 
-/* Trusted strip */
-.strip{background:var(--bg);border-bottom:1px solid var(--line)}
-.strip .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 26px;flex-wrap:wrap}
-.strip .s-item{display:flex;align-items:center;gap:12px;font-weight:600;color:var(--navy);font-size:14.5px}
-.strip .s-item .ic{width:40px;height:40px;border-radius:12px;background:#e8f7ec;color:var(--green-dark);display:flex;align-items:center;justify-content:center;font-size:18px}
+/* strip */
+.strip{background:var(--navy);color:#fff}
+.strip .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;padding:18px 26px}
+.strip .i{display:flex;align-items:center;gap:11px;font-size:14px;font-weight:600;color:#eaf1f8}
+.strip .i .ic{font-size:20px}
 
-/* Sections */
-section{padding:78px 0}
-.sec-head{text-align:center;max-width:640px;margin:0 auto 50px}
-.eyebrow{color:var(--green-dark);font-weight:700;font-size:13.5px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:12px}
-.sec-head h2{font-size:38px;font-weight:800;color:var(--navy);letter-spacing:-.5px;line-height:1.12;margin-bottom:14px}
-.sec-head p{color:var(--muted);font-size:16.5px}
+/* sections */
+section{padding:72px 0}
+.sh{text-align:center;max-width:640px;margin:0 auto 46px}
+.eyebrow{font-family:'Montserrat';color:var(--green-deep);font-weight:700;font-size:12.5px;letter-spacing:1.6px;text-transform:uppercase;margin-bottom:10px}
+.sh h2{font-size:33px;font-weight:800;color:var(--navy);letter-spacing:-.4px;line-height:1.15;margin-bottom:12px}
+.sh p{color:var(--muted);font-size:16px}
 
-/* Services */
-.services{background:linear-gradient(180deg,#fff,#f7fbf9)}
-.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.svc{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px;transition:.2s;position:relative;overflow:hidden}
-.svc:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:#cdeacf}
-.svc .ic{width:56px;height:56px;border-radius:15px;background:linear-gradient(135deg,#e8f7ec,#d3f0d9);color:var(--green-dark);display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:18px}
-.svc h3{font-size:20px;font-weight:800;color:var(--navy);margin-bottom:9px}
-.svc p{color:var(--muted);font-size:14.5px;margin-bottom:16px}
-.svc ul{list-style:none;display:flex;flex-wrap:wrap;gap:7px}
-.svc ul li{font-size:12.5px;font-weight:600;color:#2f5544;background:#eef8f0;border:1px solid #d9efdd;padding:5px 11px;border-radius:20px}
-.svc .more{position:absolute;top:26px;right:26px;color:var(--green);font-weight:800;font-size:20px;opacity:.35}
+/* services */
+.svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.scard{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;transition:.2s}
+.scard:hover{box-shadow:0 18px 40px -22px rgba(27,60,95,.3);transform:translateY(-4px)}
+.scard .ph{height:210px;background-size:cover;background-position:center;position:relative}
+.scard .ph .lab{position:absolute;left:0;bottom:0;right:0;background:linear-gradient(transparent,rgba(19,44,70,.86));color:#fff;padding:22px 22px 16px;font-family:'Montserrat';font-weight:800;font-size:21px}
+.scard .bd{padding:22px}
+.scard .bd p{font-size:14px;color:var(--muted);margin-bottom:14px}
+.scard ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.scard ul li{font-size:12.5px;font-weight:600;color:var(--navy);background:var(--soft);border:1px solid var(--line);padding:5px 12px;border-radius:20px}
+.svc-note{text-align:center;margin-top:26px;color:var(--muted);font-size:14.5px}
+.svc-note b{color:var(--green-deep)}
 
-/* Why us */
-.why{background:var(--navy);color:#fff}
-.why .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-.why .eyebrow{color:#63e07c}
-.why h2{font-size:36px;font-weight:800;letter-spacing:-.5px;margin-bottom:18px;line-height:1.15}
-.why p.intro{color:#bccdd5;font-size:16px;margin-bottom:26px}
-.feat{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-.feat .f{display:flex;gap:14px;align-items:flex-start}
-.feat .f .fi{flex:0 0 auto;width:44px;height:44px;border-radius:12px;background:rgba(47,184,78,.18);color:#78e58c;display:flex;align-items:center;justify-content:center;font-size:20px}
-.feat .f h4{font-size:16px;font-weight:700;margin-bottom:3px}
-.feat .f p{font-size:13.5px;color:#a9bfc8;line-height:1.5}
-.stats-card{background:linear-gradient(160deg,#14384f,#0d2534);border:1px solid rgba(255,255,255,.09);border-radius:20px;padding:34px;box-shadow:var(--shadow)}
-.stats-card .big{font-size:15px;color:#bccdd5;margin-bottom:22px}
-.st-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-.st b{display:block;font-size:38px;font-weight:800;color:#63e07c;line-height:1}
-.st span{font-size:13.5px;color:#c5d6dd}
-.trn{margin-top:26px;padding-top:20px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;color:#9fb6bf}
+/* why */
+.why{background:var(--soft-green)}
+.why .wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:50px;align-items:center}
+.why img{width:100%;border-radius:14px;box-shadow:0 20px 44px -24px rgba(27,60,95,.4);display:block}
+.why h2{font-size:31px;font-weight:800;color:var(--navy);margin-bottom:14px;letter-spacing:-.4px;line-height:1.18}
+.why .intro{color:#3f5162;font-size:15.5px;margin-bottom:22px}
+.wl{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.wl .w{display:flex;gap:12px;align-items:flex-start}
+.wl .w .ic{flex:0 0 auto;width:40px;height:40px;border-radius:9px;background:#fff;border:1px solid #cdefc9;color:var(--green-deep);display:flex;align-items:center;justify-content:center;font-size:18px}
+.wl .w h4{font-family:'Montserrat';font-size:15px;font-weight:700;color:var(--navy);margin-bottom:2px}
+.wl .w p{font-size:13px;color:#5c6b78;line-height:1.5}
 
-/* Pricing */
-.pricing .price-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:860px;margin:0 auto}
-.pcard{border:1.5px solid var(--line);border-radius:20px;padding:32px;background:#fff;position:relative}
-.pcard.feature{border-color:var(--green);box-shadow:0 20px 44px -20px rgba(47,184,78,.4)}
-.pcard .tag{position:absolute;top:-13px;left:32px;background:var(--green);color:#fff;font-size:12px;font-weight:700;padding:5px 14px;border-radius:20px}
-.pcard h3{font-size:19px;color:var(--navy);font-weight:800;margin-bottom:6px}
-.pcard .from{font-size:14px;color:var(--muted);margin-bottom:8px}
-.pcard .amt{font-size:44px;font-weight:800;color:var(--navy);line-height:1}
-.pcard .amt span{font-size:16px;font-weight:600;color:var(--muted)}
-.pcard ul{list-style:none;margin:20px 0 24px}
-.pcard ul li{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;color:#33505f;padding:7px 0}
-.pcard ul li .c{color:var(--green);font-weight:800}
-.pcard .btn{width:100%;justify-content:center}
-.price-note{text-align:center;color:var(--muted);font-size:14px;margin-top:26px}
+/* review */
+.review{background:#fff}
+.rev-card{max-width:760px;margin:0 auto;text-align:center;border:1px solid var(--line);border-radius:16px;padding:40px 40px 36px;background:var(--soft);position:relative}
+.rev-card .stars{color:#f5b301;font-size:22px;letter-spacing:3px;margin-bottom:16px}
+.rev-card q{font-family:'Montserrat';font-size:20px;font-weight:600;color:var(--navy);line-height:1.5;display:block;margin-bottom:20px}
+.rev-card .who{display:flex;align-items:center;justify-content:center;gap:12px}
+.rev-card .av{width:44px;height:44px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Montserrat';font-weight:700}
+.rev-card .who b{display:block;color:var(--navy);font-family:'Montserrat'}
+.rev-card .who span{font-size:13px;color:var(--muted)}
+.gbadge{margin-top:8px;font-size:12.5px;color:var(--muted)}
 
-/* CTA band */
-.cta-band{background:linear-gradient(120deg,var(--green),#26a544);color:#fff;text-align:center}
-.cta-band h2{font-size:34px;font-weight:800;margin-bottom:12px;letter-spacing:-.5px}
-.cta-band p{font-size:17px;color:#eafff0;margin-bottom:26px}
-.cta-band .btn{background:#fff;color:var(--green-dark)}
-.cta-band .btn:hover{transform:translateY(-2px)}
+/* pricing */
+.pricing{background:var(--soft)}
+.pg{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:840px;margin:0 auto}
+.pc{background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:30px;position:relative}
+.pc.feat{border-color:var(--green-mid);box-shadow:0 20px 44px -22px rgba(60,163,74,.35)}
+.pc .ptag{position:absolute;top:-13px;left:30px;background:var(--green-deep);color:#fff;font-family:'Montserrat';font-size:11.5px;font-weight:700;padding:5px 13px;border-radius:20px;letter-spacing:.4px}
+.pc h3{font-size:18px;color:var(--navy);font-weight:800;margin-bottom:5px}
+.pc .from{font-size:13px;color:var(--muted);margin-bottom:8px}
+.pc .amt{font-family:'Montserrat';font-size:42px;font-weight:800;color:var(--navy);line-height:1}
+.pc .amt span{font-size:15px;font-weight:600;color:var(--muted)}
+.pc ul{list-style:none;margin:18px 0 22px}
+.pc ul li{display:flex;gap:9px;font-size:14px;color:#3f5162;padding:6px 0}
+.pc ul li .c{color:var(--green-deep);font-weight:800}
+.pc .btn{width:100%;justify-content:center}
+.pnote{text-align:center;color:var(--muted);font-size:14px;margin-top:24px}
 
-/* Footer */
-footer{background:#0b2230;color:#9fb6bf;padding:60px 0 26px;font-size:14px}
-.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:36px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.08)}
-footer .brand{color:#fff;margin-bottom:14px}
-footer p.desc{color:#8ba3ad;line-height:1.7;font-size:14px}
-footer h5{color:#fff;font-size:15px;font-weight:700;margin-bottom:16px}
+/* cta */
+.cta{background:var(--navy);color:#fff;text-align:center}
+.cta h2{font-size:31px;font-weight:800;margin-bottom:10px}
+.cta p{color:#c3d4e4;font-size:16px;margin-bottom:24px}
+.cta .btn{background:#25D366;color:#fff}
+.cta .btn:hover{background:#1eb457}
+
+/* footer */
+footer{background:var(--navy-d);color:#a9bccd;padding:56px 0 24px;font-size:14px}
+.fg{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:34px;padding-bottom:34px;border-bottom:1px solid rgba(255,255,255,.1)}
+footer img.flogo{height:46px;margin-bottom:14px;filter:brightness(1.1)}
+footer p.d{color:#93aabd;line-height:1.7;font-size:13.5px}
+footer h5{font-family:'Montserrat';color:#fff;font-size:14px;font-weight:700;margin-bottom:14px;text-transform:uppercase;letter-spacing:.5px}
 footer ul{list-style:none}
-footer ul li{margin-bottom:10px}
-footer ul li a:hover{color:#63e07c}
-.f-contact div{margin-bottom:12px;color:#bccdd5}
-.f-contact b{color:#fff}
-.f-bot{display:flex;justify-content:space-between;padding-top:22px;font-size:13px;color:#7d95a0;flex-wrap:wrap;gap:8px}
+footer ul li{margin-bottom:9px}
+footer ul li a:hover{color:var(--green)}
+.fc div{margin-bottom:10px;color:#c3d4e4}
+.fc b{color:#fff}
+.fb{display:flex;justify-content:space-between;padding-top:20px;font-size:12.5px;color:#7d95a8;flex-wrap:wrap;gap:6px}
 @media(max-width:900px){
- .hero .wrap,.why .wrap{grid-template-columns:1fr}
- .svc-grid,.pricing .price-grid,.feat{grid-template-columns:1fr}
- nav.menu,.topbar,.phone-pill{display:none}
- .hero h1{font-size:38px}
- .f-grid{grid-template-columns:1fr 1fr}
+ .hero .wrap,.why .wrap,.svc-grid,.pg{grid-template-columns:1fr}
+ nav.menu,.topbar{display:none}
+ .hero h1{font-size:33px}
+ .why img{max-height:280px;object-fit:cover}
+ .fg{grid-template-columns:1fr 1fr}
 }
 </style>
 </head>
@@ -171,174 +177,186 @@ footer ul li a:hover{color:#63e07c}
 
 <!-- Topbar -->
 <div class="topbar"><div class="wrap">
-  <div class="t-left"><span><b>📞 +971 4 876 7588</b></span><span>✉️ info@hopsweepmop.com</span><span>📍 Al Quoz 3, Dubai</span></div>
-  <div class="t-right"><span class="dot">●</span> Sat–Thu 8:00 – 20:00 <span>|</span> <span>WhatsApp +971 55 985 8136</span></div>
+  <div>Office: <b>+971 4 876 7588</b> &nbsp;·&nbsp; Mobile & WhatsApp: <b>+971 55 985 8136</b></div>
+  <div class="soc"><a href="#">📘</a><a href="#">📸</a><a href="#">▶️</a><a href="#">✉️</a></div>
 </div></div>
 
-<!-- Nav -->
-<header class="nav"><div class="wrap">
-  <a class="brand" href="#"><span class="mark">✦</span><span>HOP SWEEP MOP<small>CLEANING SERVICES LLC</small></span></a>
+<!-- Header -->
+<header class="site"><div class="wrap">
+  <a class="logo" href="#"><img src="assets/hsm-sparkling-clean-text-under_7.gif" alt="Hop Sweep Mop Cleaning Services LLC"></a>
   <nav class="menu">
     <a href="#" class="active">Home</a>
-    <a href="#services">Residential</a>
-    <a href="#services">Commercial</a>
+    <a href="#services">Cleaning Services</a>
     <a href="#pricing">Pricing</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
+    <a href="#contact">Contact Us</a>
+    <a href="#why">About Us</a>
+    <a class="btn btn-navy" href="#book" style="text-transform:none;color:#fff">Book Now</a>
   </nav>
-  <div class="nav-cta">
-    <span class="phone-pill">Since 2018</span>
-    <a class="btn btn-green" href="#book">Book Now</a>
-  </div>
 </div></header>
 
 <!-- Hero -->
 <section class="hero"><div class="wrap">
-  <div class="hero-left">
-    <div class="badge">★ Trusted in Dubai since 2018 · TRN 104298212200003</div>
-    <h1>A <em>spotless space</em>, cleaned by people you can trust.</h1>
-    <p class="lead">Professional residential & commercial cleaning across Dubai — delivered by full-time, background-checked staff. Book online in under a minute.</p>
+  <div>
+    <div class="tag">★ Serving Dubai since 2018 · Licensed LLC</div>
+    <h1>The most reliable <span>cleaning services</span> company in Dubai.</h1>
+    <p class="lead">Residential & commercial cleaning delivered by full-time, background-checked staff. Book your cleaning online in under a minute — we'll confirm the same day.</p>
     <div class="hero-cta">
-      <a class="btn btn-green" href="#book">Get a Free Quote →</a>
-      <a class="btn btn-ghost" href="#services">Explore Services</a>
+      <a class="btn btn-navy" href="#book">Book a Cleaning</a>
+      <a class="btn btn-green" href="#">💬 WhatsApp Us</a>
     </div>
-    <div class="trust-row">
-      <div class="ti"><span class="check">✔</span><div><b>7+ yrs</b>Serving Dubai</div></div>
-      <div class="ti"><span class="check">✔</span><div><b>100%</b>Vetted staff</div></div>
-      <div class="ti"><span class="check">✔</span><div><b>15+</b>Cleaning services</div></div>
+    <div class="stats">
+      <div class="s"><b>2018</b><span>Serving Dubai since</span></div>
+      <div class="s"><b>15+</b><span>Cleaning services</span></div>
+      <div class="s"><b>100%</b><span>Vetted full-time staff</span></div>
     </div>
   </div>
-  <!-- Booking card -->
-  <div class="book-card" id="book">
-    <h3>Book Your Cleaning</h3>
-    <p class="sub">Pick a service & date — we'll confirm within the hour.</p>
+  <div class="book" id="book">
+    <div class="bh"><h3>Book Your Cleaning</h3></div>
+    <p class="sub">Pick a service & date — we'll email you a confirmation.</p>
     <div class="field"><label>Service Type</label>
-      <select><option>Residential — Apartment / Villa</option><option>Deep Cleaning</option><option>Move In / Move Out</option><option>Carpet / Sofa / Curtains</option><option>Commercial — Office</option><option>Commercial — Other</option></select></div>
-    <div class="field two">
-      <div><label>Preferred Date</label><input type="date" value="2026-07-30"></div>
-      <div><label>Cleaners</label><select><option>1 Cleaner</option><option>2 Cleaners</option><option>3+ Cleaners</option></select></div>
+      <select><option>Home — Apartment / Villa</option><option>Deep Cleaning</option><option>Move In / Move Out</option><option>Carpet / Sofa / Curtains</option><option>Commercial — Office</option><option>Commercial — Other</option></select></div>
+    <div class="two">
+      <div class="field"><label>Preferred Date</label><input type="date" value="2026-07-30"></div>
+      <div class="field"><label>Cleaners</label><select><option>1 Cleaner</option><option>2 Cleaners</option><option>3+ Cleaners</option></select></div>
     </div>
-    <div class="field two">
-      <div><label>Your Name</label><input type="text" placeholder="Full name"></div>
-      <div><label>Phone</label><input type="text" placeholder="+971 …"></div>
+    <div class="two">
+      <div class="field"><label>Your Name</label><input type="text" placeholder="Full name"></div>
+      <div class="field"><label>Phone</label><input type="text" placeholder="+971 …"></div>
     </div>
     <div class="field"><label>Email</label><input type="email" placeholder="you@email.com"></div>
-    <a class="btn btn-green" href="#">Request Booking →</a>
-    <div class="book-note">🔒 No payment now · Instant email confirmation</div>
+    <a class="btn btn-navy" href="#">Request Booking</a>
+    <div class="note">🔒 No payment now · Instant email to our team</div>
   </div>
 </div></section>
 
-<!-- Trust strip -->
+<!-- strip -->
 <div class="strip"><div class="wrap">
-  <div class="s-item"><span class="ic">👥</span> Full-time, vetted staff</div>
-  <div class="s-item"><span class="ic">🧴</span> Own equipment & eco supplies</div>
-  <div class="s-item"><span class="ic">📅</span> One-off or contract</div>
-  <div class="s-item"><span class="ic">⚡</span> Same-day availability</div>
+  <div class="i"><span class="ic">👥</span> Full-time, background-checked staff</div>
+  <div class="i"><span class="ic">🧴</span> Own equipment & eco supplies</div>
+  <div class="i"><span class="ic">📅</span> One-off or monthly contracts</div>
+  <div class="i"><span class="ic">⏱️</span> On-time, guaranteed</div>
 </div></div>
 
-<!-- Services -->
-<section class="services" id="services"><div class="wrap">
-  <div class="sec-head">
+<!-- services -->
+<section id="services"><div class="wrap">
+  <div class="sh">
     <div class="eyebrow">What we do</div>
-    <h2>Cleaning services for every space</h2>
-    <p>From apartments and villas to offices, malls and yachts — one trusted team for all of it, with room to add specialist services anytime.</p>
+    <h2>Our cleaning services in Dubai</h2>
+    <p>Trusted, high-quality cleaning for homes and businesses — with room to add specialist services like deep cleaning and carpets anytime.</p>
   </div>
   <div class="svc-grid">
-    <div class="svc"><span class="more">→</span><div class="ic">🏠</div><h3>Residential Cleaning</h3><p>Regular, reliable home cleaning that keeps your apartment or villa fresh and healthy.</p><ul><li>Apartment</li><li>Villa</li><li>Housekeeping</li><li>Move In/Out</li></ul></div>
-    <div class="svc"><span class="more">→</span><div class="ic">🏢</div><h3>Commercial Cleaning</h3><p>Professional cleaning for offices, retail and hospitality — on a schedule that suits you.</p><ul><li>Office</li><li>Restaurant</li><li>Mall</li><li>Warehouse</li></ul></div>
-    <div class="svc"><span class="more">→</span><div class="ic">✨</div><h3>Deep Cleaning</h3><p>Top-to-bottom intensive cleaning for move-ins, seasonal resets and post-renovation.</p><ul><li>Kitchen</li><li>Bathrooms</li><li>Full home</li><li>Post-reno</li></ul></div>
-    <div class="svc"><span class="more">→</span><div class="ic">🛋️</div><h3>Carpet & Upholstery</h3><p>Specialist care for carpets, sofas and curtains — deep-extracted and refreshed.</p><ul><li>Carpet</li><li>Sofa</li><li>Curtains</li><li>Mattress</li></ul></div>
-    <div class="svc"><span class="more">→</span><div class="ic">🏥</div><h3>Facilities & Specialist</h3><p>Hospitals, schools and warehouses cleaned to strict hygiene standards.</p><ul><li>Hospital</li><li>School</li><li>Warehouse</li></ul></div>
-    <div class="svc"><span class="more">→</span><div class="ic">🛥️</div><h3>Boat & Yacht</h3><p>Marine-grade cleaning to keep your boat or yacht immaculate, inside and out.</p><ul><li>Interior</li><li>Deck</li><li>Detailing</li></ul></div>
+    <div class="scard">
+      <div class="ph" style="background-image:url('assets/home-cleaning_1.jpg')"><div class="lab">Home Cleaning Services</div></div>
+      <div class="bd">
+        <p>Regular, reliable cleaning that keeps your apartment or villa fresh, healthy and spotless.</p>
+        <ul><li>Apartment</li><li>Villa</li><li>Deep Cleaning</li><li>Move In / Out</li><li>Carpet</li><li>Curtains</li><li>Sofa</li><li>Housekeeping</li></ul>
+      </div>
+    </div>
+    <div class="scard">
+      <div class="ph" style="background-image:url('assets/cleaning-office.jpg')"><div class="lab">Commercial Cleaning</div></div>
+      <div class="bd">
+        <p>Professional cleaning for offices, retail and hospitality — on a schedule that suits your business.</p>
+        <ul><li>Office</li><li>Restaurant</li><li>Hospital</li><li>Mall</li><li>School</li><li>Warehouse</li><li>Boat & Yacht</li></ul>
+      </div>
+    </div>
   </div>
+  <p class="svc-note">Need something specific? <b>Deep cleaning, carpets, sofas, curtains and more</b> — just ask when you book.</p>
 </div></section>
 
-<!-- Why us -->
-<section class="why"><div class="wrap">
-  <div class="why-left">
+<!-- why -->
+<section class="why" id="why"><div class="wrap">
+  <img src="assets/cleaning-house-kitchen_1.jpg" alt="Professional home cleaning in Dubai">
+  <div>
     <div class="eyebrow">Why Hop Sweep Mop</div>
-    <h2>Cleaning you can actually rely on.</h2>
-    <p class="intro">Since 2018 we've built our reputation on one thing: trust. We hire our cleaners full-time, run background checks, and take full responsibility for our team — so you always know who's in your space.</p>
-    <div class="feat">
-      <div class="f"><div class="fi">🛡️</div><div><h4>Background-checked</h4><p>Every cleaner vetted and directly employed by us.</p></div></div>
-      <div class="f"><div class="fi">🤝</div><div><h4>Full accountability</h4><p>We take full responsibility for our staff and work.</p></div></div>
-      <div class="f"><div class="fi">🎯</div><div><h4>Tailored to you</h4><p>Cleaning customised to your space and schedule.</p></div></div>
-      <div class="f"><div class="fi">💚</div><div><h4>High retention</h4><p>Clients stay with us year after year.</p></div></div>
+    <h2>Cleaning you can genuinely rely on.</h2>
+    <p class="intro">Established in December 2018, we provide customized cleaning tailored to your everyday needs. We personally interview and select our cleaners based on thorough background checks, experience and passion — and we never use part-time maids or third-party cleaners.</p>
+    <div class="wl">
+      <div class="w"><div class="ic">🛡️</div><div><h4>Background-checked</h4><p>Every cleaner vetted and on our company sponsorship.</p></div></div>
+      <div class="w"><div class="ic">🤝</div><div><h4>Full responsibility</h4><p>We take full responsibility for our staff and work.</p></div></div>
+      <div class="w"><div class="ic">⏱️</div><div><h4>On time, every time</h4><p>Cleaners arrive at the agreed time, finish to your approval.</p></div></div>
+      <div class="w"><div class="ic">💚</div><div><h4>Trusted since 2018</h4><p>We grow through referrals from happy clients.</p></div></div>
     </div>
-  </div>
-  <div class="stats-card">
-    <div class="big">A licensed Dubai cleaning company you can count on.</div>
-    <div class="st-grid">
-      <div class="st"><b>2018</b><span>Serving Dubai since</span></div>
-      <div class="st"><b>15+</b><span>Cleaning services</span></div>
-      <div class="st"><b>100%</b><span>Vetted, full-time staff</span></div>
-      <div class="st"><b>7 days</b><span>A week availability</span></div>
-    </div>
-    <div class="trn">Licensed LLC · TRN 104298212200003 · Al Quoz 3, Dubai</div>
   </div>
 </div></section>
 
-<!-- Pricing -->
+<!-- review -->
+<section class="review"><div class="wrap">
+  <div class="sh">
+    <div class="eyebrow">What clients say</div>
+    <h2>Rated 5 stars by Dubai clients</h2>
+  </div>
+  <div class="rev-card">
+    <div class="stars">★★★★★</div>
+    <q>I have had two positive engagements of Hop Sweep Mop Cleaning Services this week. The staff are thorough, professional and punctual as well as being friendly and accommodating. Highly recommended.</q>
+    <div class="who">
+      <div class="av">TD</div>
+      <div style="text-align:left"><b>Tam Devereux</b><span>Google Review · 5 reviews</span></div>
+    </div>
+    <div class="gbadge">★ Verified Google review</div>
+  </div>
+</div></section>
+
+<!-- pricing -->
 <section class="pricing" id="pricing"><div class="wrap">
-  <div class="sec-head">
+  <div class="sh">
     <div class="eyebrow">Simple, honest rates</div>
     <h2>Transparent hourly pricing</h2>
-    <p>Pay by the hour, per cleaner. Special discounted rates on monthly and long-term contracts.</p>
+    <p>Pay by the hour, per cleaner. Special discounted rates on regular monthly and long-term contracts.</p>
   </div>
-  <div class="price-grid">
-    <div class="pcard">
+  <div class="pg">
+    <div class="pc">
       <h3>Without Materials</h3>
       <div class="from">You provide equipment & supplies</div>
       <div class="amt">35<span> AED / hr</span></div>
       <ul>
-        <li><span class="c">✔</span> Per cleaner, 3-hour minimum</li>
+        <li><span class="c">✔</span> Per cleaner · 3-hour minimum</li>
         <li><span class="c">✔</span> Just 30 AED/hr above 4 hours</li>
         <li><span class="c">✔</span> Trained, full-time staff</li>
-        <li><span class="c">✔</span> Residential or commercial</li>
+        <li><span class="c">✔</span> Home or commercial</li>
       </ul>
-      <a class="btn btn-outline" href="#book">Book This</a>
+      <a class="btn btn-out" href="#book">Book This</a>
     </div>
-    <div class="pcard feature">
-      <span class="tag">Most popular</span>
+    <div class="pc feat">
+      <span class="ptag">Most popular</span>
       <h3>With Materials</h3>
       <div class="from">We bring all equipment & eco supplies</div>
       <div class="amt">45<span> AED / hr</span></div>
       <ul>
-        <li><span class="c">✔</span> Per cleaner, 3-hour minimum</li>
+        <li><span class="c">✔</span> Per cleaner · 3-hour minimum</li>
         <li><span class="c">✔</span> Just 40 AED/hr above 4 hours</li>
         <li><span class="c">✔</span> All tools & supplies included</li>
         <li><span class="c">✔</span> Nothing for you to prepare</li>
       </ul>
-      <a class="btn btn-green" href="#book">Book This</a>
+      <a class="btn btn-navy" href="#book">Book This</a>
     </div>
   </div>
-  <p class="price-note">Need a regular clean? Ask about our discounted monthly & long-term contract rates.</p>
+  <p class="pnote">Regular clean? Ask about our discounted monthly & long-term contract rates.</p>
 </div></section>
 
-<!-- CTA -->
-<section class="cta-band"><div class="wrap">
+<!-- cta -->
+<section class="cta" id="contact"><div class="wrap">
   <h2>Ready for a spotless space?</h2>
-  <p>Book online in under a minute — we'll confirm your slot within the hour.</p>
-  <a class="btn" href="#book">Book Your Cleaning →</a>
+  <p>Call +971 4 876 7588, WhatsApp +971 55 985 8136, or book online in under a minute.</p>
+  <a class="btn" href="#book">Book Your Cleaning</a>
 </div></section>
 
-<!-- Footer -->
+<!-- footer -->
 <footer><div class="wrap">
-  <div class="f-grid">
+  <div class="fg">
     <div>
-      <a class="brand" href="#"><span class="mark">✦</span><span>HOP SWEEP MOP<small style="color:#8ba3ad">CLEANING SERVICES LLC</small></span></a>
-      <p class="desc">The most reliable cleaning services company serving Dubai since 2018. Residential & commercial cleaning by full-time, background-checked staff.</p>
+      <img class="flogo" src="assets/hsm-sparkling-clean-text-under_7.gif" alt="Hop Sweep Mop">
+      <p class="d">The most reliable cleaning services company serving Dubai since 2018. Residential & commercial cleaning by full-time, background-checked staff.</p>
     </div>
-    <div><h5>Residential</h5><ul><li><a href="#">Apartment</a></li><li><a href="#">Villa</a></li><li><a href="#">Deep Cleaning</a></li><li><a href="#">Move In / Out</a></li><li><a href="#">Carpet & Sofa</a></li></ul></div>
+    <div><h5>Home Cleaning</h5><ul><li><a href="#">Apartment</a></li><li><a href="#">Villa</a></li><li><a href="#">Deep Cleaning</a></li><li><a href="#">Move In / Out</a></li><li><a href="#">Carpet & Sofa</a></li></ul></div>
     <div><h5>Commercial</h5><ul><li><a href="#">Office</a></li><li><a href="#">Restaurant</a></li><li><a href="#">Mall & Retail</a></li><li><a href="#">Warehouse</a></li><li><a href="#">Boat & Yacht</a></li></ul></div>
-    <div class="f-contact"><h5>Get in touch</h5>
+    <div class="fc"><h5>Contact Us</h5>
       <div><b>📞 +971 4 876 7588</b></div>
       <div>💬 WhatsApp +971 55 985 8136</div>
       <div>✉️ info@hopsweepmop.com</div>
       <div>📍 Office 206, Dynatrade Commercial Complex, Al Quoz 3, Dubai, UAE</div>
     </div>
   </div>
-  <div class="f-bot"><span>© 2026 Hop Sweep Mop Cleaning Services LLC. All rights reserved.</span><span>TRN 104298212200003 · Licensed in Dubai, UAE</span></div>
+  <div class="fb"><span>© 2026 Hop Sweep Mop Cleaning Services LLC. All rights reserved.</span><span>TRN 104298212200003 · Licensed in Dubai, UAE</span></div>
 </div></footer>
 
 </body>
