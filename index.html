@@ -80,6 +80,29 @@
 .rev-card .who b{display:block;color:var(--navy);font-family:'Montserrat'}
 .rev-card .who span{font-size:13px;color:var(--muted)}
 .gbadge{margin-top:8px;font-size:12.5px;color:var(--muted)}
+/* google summary + slider */
+.gsum{display:flex;align-items:center;gap:14px;justify-content:center;margin-bottom:26px}
+.gsum .glogo{width:44px;height:44px;border-radius:50%;background:#fff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-family:'Montserrat';font-weight:800;font-size:22px;background:conic-gradient(from -45deg,#4285F4 0 25%,#EA4335 0 50%,#FBBC05 0 75%,#34A853 0 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.gsum b{font-family:'Montserrat';font-size:22px;color:var(--navy)}
+.gsum .gstars{color:#f5b301;letter-spacing:2px;font-size:16px}
+.gsum .gsub{font-size:12.5px;color:var(--muted)}
+.gsum .gsub a{color:var(--green-deep);font-weight:700}
+.rev-slider{display:flex;align-items:stretch;gap:12px;max-width:860px;margin:0 auto}
+.rev-track{flex:1;overflow:hidden;position:relative;border:1px solid var(--line);border-radius:16px;background:#fff}
+.rev-slide{position:absolute;inset:0;opacity:0;transition:opacity .5s;padding:38px 40px;display:flex;flex-direction:column;justify-content:center;text-align:center}
+.rev-slide.on{opacity:1;position:relative}
+.rev-slide .stars{color:#f5b301;font-size:20px;letter-spacing:3px;margin-bottom:14px}
+.rev-slide q{font-family:'Montserrat';font-size:18.5px;font-weight:600;color:var(--navy);line-height:1.5;display:block;margin-bottom:18px}
+.rev-slide .who{display:flex;align-items:center;justify-content:center;gap:12px}
+.rev-slide .av{width:44px;height:44px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Montserrat';font-weight:700}
+.rev-slide .who b{display:block;color:var(--navy);font-family:'Montserrat'}
+.rev-slide .who span{font-size:13px;color:var(--muted)}
+.rnav{flex:0 0 auto;width:44px;border:1px solid var(--line);background:#fff;border-radius:12px;color:var(--navy);font-size:26px;cursor:pointer;transition:.15s;line-height:1}
+.rnav:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+.rev-dots{display:flex;gap:8px;justify-content:center;margin-top:18px}
+.rev-dots button{width:9px;height:9px;border-radius:50%;border:none;background:#cdd8e0;cursor:pointer;padding:0;transition:.15s}
+.rev-dots button.on{background:var(--green-deep);width:22px;border-radius:6px}
+@media(max-width:600px){.rnav{display:none}.rev-slide{padding:28px 22px}.rev-slide q{font-size:16px}}
 /* pricing teaser */
 .pricing{background:#fff}
 .pg{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:840px;margin:0 auto}
@@ -249,12 +272,16 @@
 <!-- review -->
 <section class="review"><div class="wrap">
   <div class="sh"><div class="eyebrow">What clients say</div><h2>Rated 5 stars by Dubai clients</h2></div>
-  <div class="rev-card">
-    <div class="stars">★★★★★</div>
-    <q>I have had two positive engagements of Hop Sweep Mop Cleaning Services this week. The staff are thorough, professional and punctual as well as being friendly and accommodating. Highly recommended.</q>
-    <div class="who"><div class="av">TD</div><div style="text-align:left"><b>Tam Devereux</b><span>Google Review · 5 reviews</span></div></div>
-    <div class="gbadge">★ Verified Google review</div>
+  <div class="gsum">
+    <span class="glogo">G</span>
+    <div><b>5.0</b> <span class="gstars">★★★★★</span><div class="gsub">Based on our Google reviews · <a href="#" target="_blank" rel="noopener">See all on Google</a></div></div>
   </div>
+  <div class="rev-slider" id="revSlider">
+    <button class="rnav prev" id="revPrev" aria-label="Previous review">‹</button>
+    <div class="rev-track" id="revTrack"><!-- slides injected by JS --></div>
+    <button class="rnav next" id="revNext" aria-label="Next review">›</button>
+  </div>
+  <div class="rev-dots" id="revDots"></div>
 </div></section>
 
 <!-- pricing -->
@@ -308,5 +335,35 @@
   <div class="fb"><span>© 2026 Hop Sweep Mop Cleaning Services LLC. All rights reserved.</span><span>TRN 104298212200003 · Licensed in Dubai, UAE</span></div>
 </div></footer>
 <a class="wafloat" href="#" title="WhatsApp us">💬</a>
+<script>
+// Google reviews slider. On the live WordPress site this list is populated
+// automatically from the real Google Business reviews (auto-updates).
+var REVIEWS = [
+  {name:"Tam Devereux", initials:"TD", stars:5, meta:"Google Review · 5 reviews",
+   text:"I have had two positive engagements of Hop Sweep Mop Cleaning Services this week. The staff are thorough, professional and punctual as well as being friendly and accommodating. Highly recommended."}
+];
+(function(){
+  var track=document.getElementById('revTrack'),dots=document.getElementById('revDots'),
+      prev=document.getElementById('revPrev'),next=document.getElementById('revNext'),i=0,timer;
+  if(!track) return;
+  REVIEWS.forEach(function(r,idx){
+    var s=document.createElement('div');s.className='rev-slide'+(idx===0?' on':'');
+    s.innerHTML='<div class="stars">'+'★'.repeat(r.stars)+'</div><q>'+r.text+'</q>'+
+      '<div class="who"><div class="av">'+r.initials+'</div><div style="text-align:left"><b>'+r.name+'</b><span>'+r.meta+'</span></div></div>';
+    track.appendChild(s);
+    var d=document.createElement('button');if(idx===0)d.className='on';
+    d.addEventListener('click',function(){go(idx);});dots.appendChild(d);
+  });
+  var slides=track.querySelectorAll('.rev-slide'),ds=dots.querySelectorAll('button');
+  var multi=REVIEWS.length>1;
+  if(!multi){prev.style.display='none';next.style.display='none';dots.style.display='none';}
+  function go(n){slides[i].classList.remove('on');ds[i].classList.remove('on');
+    i=(n+slides.length)%slides.length;slides[i].classList.add('on');ds[i].classList.add('on');restart();}
+  function restart(){if(!multi)return;clearInterval(timer);timer=setInterval(function(){go(i+1);},5000);}
+  prev.addEventListener('click',function(){go(i-1);});
+  next.addEventListener('click',function(){go(i+1);});
+  restart();
+})();
+</script>
 </body>
 </html>
